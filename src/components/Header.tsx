@@ -54,7 +54,7 @@ export default function Header({ activeSection }: HeaderProps) {
         {/* Brand & Chapter Identity */}
         <div className="flex items-center space-x-3">
           <a
-            href="/"
+            href="https://amazon-hike.com/"
             className="flex items-center space-x-2.5 text-slate-100 hover:text-emerald-400 transition-colors group"
             title="亞馬遜國家山岳協會首頁"
           >
