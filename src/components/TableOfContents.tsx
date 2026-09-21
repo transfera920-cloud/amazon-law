@@ -16,7 +16,7 @@ export default function TableOfContents({ activeSection }: TableOfContentsProps)
       <div className="flex items-center justify-between pb-3 border-b border-[#1b2b35] mb-4">
         <div className="flex items-center space-x-2 text-slate-100">
           <ListFilter className="w-5 h-5 text-emerald-400" aria-hidden="true" />
-          <h2 className="text-base font-bold tracking-wide">本章目錄導覽</h2>
+          <p className="text-base font-bold tracking-wide">本章目錄導覽</p>
         </div>
         <span className="text-xs text-slate-400">點擊快速前往該節</span>
       </div>

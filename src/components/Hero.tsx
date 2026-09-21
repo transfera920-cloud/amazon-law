@@ -1,9 +1,9 @@
 import React from 'react';
-import { ShieldCheck, Mountain, MapPin, ArrowDown } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden border-b border-[#1f303b] bg-gradient-to-b from-[#0a1014] via-[#0e171e] to-[#121c24] pt-12 pb-16 sm:pt-16 sm:pb-20">
+    <section className="relative overflow-hidden border-b border-[#1f303b] bg-gradient-to-b from-[#0a1014] via-[#0e171e] to-[#121c24] pt-12 pb-16 sm:pt-16 sm:pb-20">
       {/* Background Topographic Contour & Mountain Silhouette Pattern in CSS/SVG */}
       <div
         className="absolute inset-0 opacity-15 pointer-events-none"
@@ -39,22 +39,12 @@ export default function Hero() {
             d="M-50 280 C320 200 680 370 1080 250 C1280 190 1380 290 1500 260"
             stroke="#223946"
             strokeWidth="1"
+            strokeDasharray="4 6"
           />
         </svg>
       </div>
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Chapter Breadcrumb Badges */}
-        <div className="flex flex-wrap items-center gap-2.5 mb-5">
-          <span className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-emerald-950/80 border border-emerald-700/60 text-emerald-300">
-            <Mountain className="w-3.5 h-3.5" aria-hidden="true" />
-            <span>第十五章 · 登山法規與申請</span>
-          </span>
-          <span className="inline-flex items-center text-xs font-medium text-slate-400 tracking-wider">
-            Chapter 15 · Regulation &amp; Application
-          </span>
-        </div>
-
         {/* Sole H1 on page */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-100 tracking-tight leading-tight sm:leading-tight mb-4">
           登山法規與申請
@@ -100,6 +90,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-    </header>
+    </section>
   );
 }

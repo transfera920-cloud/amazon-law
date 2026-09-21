@@ -1,14 +1,8 @@
 import React from 'react';
-import { Layers, Bookmark, Lock } from 'lucide-react';
+import { Layers, Bookmark } from 'lucide-react';
 
 export default function RelatedChapters() {
   const chapters = [
-    {
-      num: '第 2 章',
-      title: '行前規劃',
-      desc: '規劃登山行程',
-      isCurrent: false,
-    },
     {
       num: '第 9 章',
       title: '登山風險管理',
@@ -17,7 +11,7 @@ export default function RelatedChapters() {
     },
     {
       num: '第 10 章',
-      title: '求援與應變',
+      title: '登山求援與應變',
       desc: '事故後處理',
       isCurrent: false,
     },
@@ -48,10 +42,10 @@ export default function RelatedChapters() {
         在整體教材中的位置
       </h2>
       <p className="text-sm sm:text-base text-slate-400 mb-8">
-        本章與行前規劃、風險管理及應變救護環環相扣，共同構成完整的登山安全防護網。
+        本章與登山風險管理、登山求援與應變環環相扣，共同構成完整的登山安全防護網。
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {chapters.map((ch) => (
           <div
             key={ch.num}
@@ -71,15 +65,10 @@ export default function RelatedChapters() {
               >
                 {ch.num}
               </span>
-              {ch.isCurrent ? (
+              {ch.isCurrent && (
                 <span className="text-[11px] font-semibold text-emerald-400 flex items-center space-x-1">
                   <Bookmark className="w-3.5 h-3.5" aria-hidden="true" />
                   <span>本章研讀中</span>
-                </span>
-              ) : (
-                <span className="text-[11px] text-slate-500 flex items-center space-x-1">
-                  <Lock className="w-3 h-3" aria-hidden="true" />
-                  <span>未來預留章節</span>
                 </span>
               )}
             </div>
@@ -92,16 +81,9 @@ export default function RelatedChapters() {
               {ch.desc}
             </p>
 
-            {ch.isCurrent ? (
+            {ch.isCurrent && (
               <span className="inline-block text-xs font-medium text-emerald-400 bg-emerald-950/70 border border-emerald-800/50 px-2.5 py-1 rounded">
                 目前所在教材
-              </span>
-            ) : (
-              <span
-                className="inline-block text-xs text-slate-500 bg-[#131d24] border border-[#1e2e38] px-2.5 py-1 rounded select-none"
-                title="其他章節目前尚未公開正式網址，此處依規定預留未來連結位置，不建置虛構連結"
-              >
-                待開放發布
               </span>
             )}
           </div>

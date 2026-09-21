@@ -516,7 +516,7 @@ export default function ChapterContent() {
             實際操作應以該管理單位最新公告為準。
           </p>
           <p className="text-emerald-400">
-            目前官方「臺灣登山申請一站式服務網」已整合部分國家公園、林業及自然保育與入山申請，可作為查詢起點。
+            目前官方「<a href="https://hike.taiwan.gov.tw/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-emerald-300">臺灣登山申請一站式服務網</a>」已整合部分國家公園、林業及自然保育與入山申請，可作為查詢起點。
           </p>
           <p className="text-xs text-slate-400 pt-2 border-t border-[#20323e]">
             本教材不取代主管機關的最新公告。
