@@ -31,7 +31,7 @@ export function RegPurposeSvg() {
           <circle cx="28" cy="28" r="14" fill="#1e382b" />
           <path d="M28 20 C24 24 24 32 28 34 C32 32 32 24 28 20 Z" fill="#52b788" />
           <text x="50" y="32" fill="#f1f5f9" fontSize="14" fontWeight="600">保護自然環境</text>
-          <text x="16" y="60" fill="#94a3b8" fontSize="11" lineHeight="1.4">
+          <text x="16" y="60" fill="#94a3b8" fontSize="11">
             <tspan x="16" dy="0">控制承載負荷</tspan>
             <tspan x="16" dy="16">避免棲地生態破壞</tspan>
           </text>
